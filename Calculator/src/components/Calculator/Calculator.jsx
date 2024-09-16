@@ -18,6 +18,7 @@ export const Calculator = () => {
             <Result result={calculatedData}/>
             <div className={style.inputContainer}>
                 <label htmlFor="numOne">First Number</label>
+                {/* bruger parseInt til at converte fra string til tal så Js kan udregne resultat og ikke sætter to string sammen til en*/}
                 <input onChange={(e) => setNumOne(parseInt(e.target.value))} type="number" name="numOne"/>
                 <label htmlFor="numTwo">Second Number</label>
                 <input onChange={(e) => setNumTwo(parseInt(e.target.value))} type="number" name="numTwo"/>

@@ -8,6 +8,7 @@ export const calculateInitValue = {
 export const calculateReducer = (state, action) => {
     switch (action.type) {
         case "ADD":
+            //Laver en kopi af InitValue object og modificere det og returnere det nye modificeret object
             return {
                 ...state,
                 numOne: action.numOne,
