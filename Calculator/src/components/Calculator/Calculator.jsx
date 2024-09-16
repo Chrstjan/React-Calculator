@@ -10,6 +10,10 @@ export const Calculator = () => {
     const [numTwo, setNumTwo] = useState(0);
 
     const handleOperation = (operation) => {
+        /*
+        Burger et parameter der kommer fra button component til at styre hvilke type til switch case
+        og numOne og numTwo states sendes med til reducer
+        */
         dispatch({type: `${operation}`, numOne: numOne, numTwo: numTwo});
     }
 
