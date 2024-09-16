@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+
+.resultStyling {
+    display: block;
+    background: darkgreen;
+    padding: 0.5rem 7rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    min-height: 17px;
+
+    p {
+        margin: 0;
+        color: #eee;
+    }
+}

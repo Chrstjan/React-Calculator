@@ -16,6 +16,33 @@ export const calculateReducer = (state, action) => {
                 sum: action.numOne + action.numTwo
             }
 
+        case "SUBTRACT":
+            return {
+                ...state,
+                numOne: action.numOne,
+                numTwo: action.numTwo,
+                operation: "-",
+                sum: action.numOne - action.numTwo
+            };
+
+        case "TIMES":
+            return {
+                ...state,
+                numOne: action.numOne,
+                numTwo: action.numTwo,
+                operation: "*",
+                sum: action.numOne * action.numTwo
+            }
+
+        case "DIVIDE":
+            return {
+                ...state,
+                numOne: action.numOne,
+                numTwo: action.numTwo,
+                operation: "/",
+                sum: action.numOne / action.numTwo
+            }
+
         default:
             throw new Error(`Unknown Action: ${action.type}`)
     }
